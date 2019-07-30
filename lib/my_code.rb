@@ -37,7 +37,7 @@ def reduce(source_array, starting_point=nil)
 end
 
 
-reduce([1, 2, 3], 100) { |total, source_array[i]| total += source_array[i] }
+reduce([1, 2, 3], 100) { |total, n| total += n }
 
 
 
