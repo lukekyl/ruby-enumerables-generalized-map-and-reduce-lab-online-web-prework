@@ -24,7 +24,6 @@ def reduce(source_array, starting_point=nil)
   i = 0 
   total = 0
   
-  
   if starting_point 
     total = total + starting_point
   end
