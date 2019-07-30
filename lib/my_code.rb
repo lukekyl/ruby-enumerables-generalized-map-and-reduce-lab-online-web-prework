@@ -37,7 +37,7 @@ def reduce(source_array, starting_point=nil)
 end
 
 
-reduce([1, 2, 3], 100) { |totes, n| totes + n }
+reduce([1, 2, 3], 100) { |totes, n| totes += n }
 
 
 
