@@ -42,7 +42,7 @@ def reduce(source_array, starting_point=nil)
     i += 1
   end
   
-    truthy
+    
     p total
     return total
   
