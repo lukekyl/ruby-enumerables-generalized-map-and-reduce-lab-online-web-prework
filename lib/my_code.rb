@@ -29,7 +29,7 @@ def reduce(source_array, starting_point=nil)
   end
   
   while i<source_array.length do 
-    yield(total, source_array[i]) 
+    yield() 
     p total
     i += 1
   end
@@ -37,7 +37,7 @@ def reduce(source_array, starting_point=nil)
 end
 
 
-reduce([1, 2, 3], 100) { |totes, n| totes += n }
+reduce([1, 2, 3], 100) { |total, starting_point[i]| totes += source_array[i] }
 
 
 
