@@ -35,8 +35,8 @@ def reduce(source_array, starting_point=nil)
   #  if source_array[i] == true
   #    truthy = true
   #  else
-      truthy = false
-    end
+  #    truthy = false
+  #  end
     
     p total
     i += 1
