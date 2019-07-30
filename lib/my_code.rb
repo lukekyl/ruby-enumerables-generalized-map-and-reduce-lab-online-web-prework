@@ -27,12 +27,15 @@ def reduce(source_array, starting_point=nil)
   if starting_point 
     total = total + starting_point
   end
-  
+  if source_array.all == true 
+    return true
+  else
   while i<source_array.length do 
     total = yield(total, source_array[i]) 
     p total
     i += 1
   end
+end
   p total
 end
 
