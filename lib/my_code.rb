@@ -37,7 +37,7 @@ def reduce(source_array, starting_point=nil)
 end
 
 
-reduce([1, 2, 3], 100) { |x, n| x += n }
+reduce([1, 2, 3], 100) { |x, n| x + n }
 
 
 
