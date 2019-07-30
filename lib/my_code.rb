@@ -23,7 +23,7 @@ map([1, 2, 3, -9]) { |n| n * n }
 def reduce(source_array, starting_point=nil)
   i = 0 
   total = 0
-  truthy = nil
+  truthy = 0
   
   if starting_point 
     total = total + starting_point
@@ -31,11 +31,13 @@ def reduce(source_array, starting_point=nil)
   
   while i<source_array.length do 
     total = yield(total, source_array[i]) 
+    
     if source_array[i] == true
       truthy = true
     else
       truthy = false
     end
+    
     p total
     i += 1
   end
