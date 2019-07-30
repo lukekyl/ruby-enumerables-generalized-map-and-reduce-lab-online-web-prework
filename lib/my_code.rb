@@ -36,10 +36,12 @@ def reduce(source_array, starting_point=nil)
     p total
     i += 1
   end
-  if total !== 0
-    p total
-  else
+  
+  if total == 0
     return false
+  else
+    p total
+    return total
   end
 end
 
