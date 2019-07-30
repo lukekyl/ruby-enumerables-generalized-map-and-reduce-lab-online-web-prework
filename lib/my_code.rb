@@ -30,7 +30,7 @@ def reduce(source_array, starting_point=nil)
   
   while i<source_array.length do 
     yield(total, source_array[i]) 
-    total
+    p total
     i += 1
   end
   p total
