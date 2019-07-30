@@ -44,7 +44,7 @@ def reduce(source_array, starting_point=nil)
   
     p truthy
     p total
-    
+    return total
   end
 end
 
