@@ -32,12 +32,6 @@ def reduce(source_array, starting_point=nil)
   while i<source_array.length do 
     total = yield(total, source_array[i]) 
     
-  #  if source_array[i] == true
-  #    truthy = true
-  #  else
-  #    truthy = false
-  #  end
-    
     p total
     i += 1
   end
@@ -45,9 +39,9 @@ def reduce(source_array, starting_point=nil)
     if total == 0 
       total = true
     else
-    p total
     return total
   end
+  
 end
 
 
