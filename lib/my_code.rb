@@ -35,7 +35,7 @@ def reduce(source_array, starting_point=nil)
     p total
     i += 1
   end
-end
+  end
   p total
 end
 
