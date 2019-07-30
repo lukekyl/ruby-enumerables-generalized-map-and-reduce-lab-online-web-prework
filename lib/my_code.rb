@@ -23,6 +23,7 @@ map([1, 2, 3, -9]) { |n| n * n }
 def reduce(source_array, starting_point=nil)
   i = 0 
   total = 0
+  truthy = nil
   
   if starting_point 
     total = total + starting_point
